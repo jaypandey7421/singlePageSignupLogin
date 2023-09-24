@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div id="switch">
+        <div id="signup-switch">SignUp</div>
+        <div id="login-switch" class="opacity">Login</div>
+    </div>
+    <div class="form-wraper">
+        <!-- ----------------------- SignUp form ------------------------------------- -->
+        <div class="form-parent">
+            <div class="form-header">
+                <h3>Create an account</h3>
+            </div>
+            <form>
+                
+                <input type="text" id="fname" name="name" placeholder="Your name"><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <input type="password" id="password" name="password" placeholder="Password"><br>
+                <input type="text" id="cof-pass" placeholder="Confrom Password"><br>
+                <input type="submit" id="submit-btn" value="SignUp"><br>
+            </form>
+            <div class="form-footer">
+                <p>Already have an account? <a href="#" id="login-a">Log in</a></p>
+            </div>
+        </div>
+        <!-- ------------------------Login form--------------------------------------- -->
+        <div class="form-parent-login display-none ">
+            <div class="form-parent-lgoin-child">
+                <div class="form-header">
+                    <h3>Welcome back</h3>
+                </div>
+                <form>
+                    <input type="email" name="email" placeholder="Email"><br>
+                    <input type="password"  name="password" placeholder="Password"><br>
+                    <input type="submit"  value="Login"><br>
+                </form>
+                <div class="form-footer">
+                    <p>Don't have account? <a href="#" id="signUp-a">signUp</a></p>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
